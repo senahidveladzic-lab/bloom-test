@@ -5,7 +5,7 @@ interface FCFSTabContentProps {
   className?: string;
 }
 
-export function FCFSTabContent({ className }: FCFSTabContentProps) {
+export function FcsfTabContent({ className }: FCFSTabContentProps) {
   return (
     <div className={cn("flex w-full flex-col gap-4", className)}>
       <div className="flex gap-4">

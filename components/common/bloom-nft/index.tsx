@@ -11,7 +11,7 @@ import {
 } from "@/components/common/bloom-nft/tab-navigation";
 import { EligibilityTabContent } from "@/components/common/bloom-nft/eligibility-tab-content";
 import { PoolTabContent } from "@/components/common/bloom-nft/pool-tab-content";
-import { FCFSTabContent } from "@/components/common/bloom-nft/FCFSTab-content";
+import { FcsfTabContent } from "@/components/common/bloom-nft/fcsf-tab-content";
 
 export default function BloomNFTCard() {
   const [activeTab, setActiveTab] = useState("eligibility");
@@ -49,8 +49,8 @@ export default function BloomNFTCard() {
       {/* Main Card */}
       <div
         className={cn(
-          "flex w-full flex-col overflow-hidden rounded-2xl p-0",
-          "border lg:border-white/15 lg:bg-white/5",
+          "flex w-full flex-col overflow-hidden p-0 lg:rounded-2xl",
+          "lg:border lg:border-white/15 lg:bg-white/5",
           "lg:shadow-[0_4px_30px_rgba(0,0,0,0.1)] lg:backdrop-blur-[150px]",
         )}
       >
@@ -79,7 +79,7 @@ export default function BloomNFTCard() {
               <div className="w-full">
                 {activeTab === "eligibility" && <EligibilityTabContent />}
                 {activeTab === "guaranteed" && <PoolTabContent />}
-                {activeTab === "fcfs" && <FCFSTabContent />}
+                {activeTab === "fcfs" && <FcsfTabContent />}
               </div>
             </div>
           </div>
